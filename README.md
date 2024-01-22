@@ -16,5 +16,16 @@ As Pixy requires python between 3.6 and 3.7, need to create two conda environmen
 
 ## Workflow used
 
+In this project, we sampled multiple small vertebrate species (abbreviations used across the analyses):
+Hose's frog, _Odorrana hosii_ (OH)
+Genus _Chalcorana_ (CH)
+Whitehead's spiny rat, _Maxomys whiteheadi_ (MW)
+Many-lined sun skink, _Eutropis multifasciata_ (EM)
+......
 
+For each species, we:
 
+1. called genomic variants (SNParcher, configuration folder as "XX_config" and script to proceed as "T2_XX.sh").
+2. SNP filtering (PLINK, script in "XX_p_script.sh").
+3. inspected individuals' differentiation (PCA in PLINK) and ancestries (ADMIXTURE) (see "XX_p_script.sh").
+4. scanned nucleotide diversity, Fst and Pixy across the genomic landscape. 
