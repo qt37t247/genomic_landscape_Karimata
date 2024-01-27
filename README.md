@@ -34,3 +34,5 @@ For each species, we:
 1. called genomic variants (SNPArcher, configuration folder as "config" and script to proceed as "XX.sh").
    
 2. filtered SNP, scanned genomic landscape, and ran PCA and ADMIXTURE ("XX_p_script.sh", "remove.txt", "XX_popfile.txt").
+
+3. plotted pi, Fst, and Dxy across the genomic landscape ("vis.R")
